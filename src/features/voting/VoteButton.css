@@ -1,0 +1,21 @@
+/* src/features/voting/VoteButtons.css */
+.vote-buttons {
+  text-align: center;
+  width: 50px;
+}
+
+.vote-count {
+  font-weight: bold;
+}
+
+.vote-up {
+  color: green;
+}
+
+.vote-down {
+  color: red;
+}
+
+.vote-neutral {
+  color: gray;
+}

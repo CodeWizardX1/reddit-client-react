@@ -1,12 +1,17 @@
 // src/features/posts/Post.js
+import React from 'react';
+import VoteButton from '../voting/VoteButton';
+import './Post.css';
 
-import React from "react";
-
-export default function Post() {
+export default function Post({ post }) {
   return (
-    <div>
-      {/* TODO: Render post preview */}
-      Post component
+    <div className="post">
+      <VoteButton ups={post.ups} />
+      <div className="post-content">
+        <h3 className="post-title">{post.title}</h3>
+        <img className="post-image" src={post.image} alt={post.title} />
+        <p className="post-author">Posted by u/{post.author}</p>
+      </div>
     </div>
   );
 }
