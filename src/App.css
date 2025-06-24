@@ -36,3 +36,26 @@
     transform: rotate(360deg);
   }
 }
+
+
+.app {
+  font-family: sans-serif;
+  padding: 1rem;
+}
+
+header {
+  display: flex;
+  margin-bottom: 1rem;
+  align-items: flex-start;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+

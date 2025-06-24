@@ -5,10 +5,20 @@
   gap: 1rem;
   margin-bottom: 2rem;
   align-items: flex-start;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.2s ease;
+  max-width: 800px;
+}
+
+.post:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .post-content {
-  max-width: 600px;
+  width: 100%;
 }
 
 .post-title {
@@ -27,4 +37,33 @@
 .post-author {
   font-size: 0.9rem;
   color: #555;
+}
+
+.post-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: #888;
+  margin-top: 0.5rem;
+}
+
+.comment-icon {
+  font-size: 1rem;
+  margin: 5px;
+}
+
+.comments-section {
+  display: flex;
+  align-items: center;
+}
+
+.post-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.post-link:hover .post-title {
+  text-decoration: underline;
 }
