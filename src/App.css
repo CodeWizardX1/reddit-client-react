@@ -49,7 +49,7 @@ header {
   align-items: flex-start;
 }
 
-.main-content {
+/* .main-content {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -57,5 +57,40 @@ header {
   max-width: 1200px;
   margin: 0 auto;
   padding: 1rem;
+} */
+
+.main-content {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 16px;
+}
+
+/* Mobile responsive - hide sidebar on screens below 700px */
+@media (max-width: 699px) {
+  .main-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .sidebar {
+    display: none;
+  }
+  
+  .app {
+    padding: 0.5rem;
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 425px) {
+  .app {
+    padding: 0.25rem;
+  }
+}
+
+/* Extra small mobile devices */
+@media (max-width: 320px) {
+  .app {
+    padding: 0.125rem;
+  }
 }
 

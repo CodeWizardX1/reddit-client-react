@@ -60,3 +60,10 @@
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+
+.subreddit-item.active {
+  font-weight: bold;
+  color: #0079d3;
+  background-color: #f0f8ff;
+  border-radius: 6px;
+}

@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react';
+import './Error.css';
 
-export default function Error() {
+export default function Error({ message = "Something went wrong." }) {
   return (
-    <div>
-      {/* TODO: Renders generic error message */}
-      Error component
+    <div className="error">
+      <p>⚠️ {message}</p>
     </div>
   );
 }

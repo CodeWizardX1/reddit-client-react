@@ -24,6 +24,12 @@
   font-size: 1.25rem;
   color: #1a1a1b;
   flex-shrink: 0;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.logo:hover {
+  opacity: 0.8;
 }
 
 .logo-icon {
@@ -63,4 +69,82 @@
   color: #878a8c;
   font-size: 1rem;
   pointer-events: none;
+}
+
+/* Mobile responsive breakpoints */
+@media (max-width: 699px) {
+  .header-inner {
+    gap: 0.5rem;
+  }
+  
+  .search-container {
+    max-width: none;
+  }
+  
+  .logo {
+    font-size: 1.1rem;
+  }
+  
+  .logo-icon {
+    font-size: 1.5rem;
+    margin-right: 0.25rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .header {
+    padding: 0.375rem 0.5rem;
+  }
+  
+  .header-inner {
+    gap: 0.375rem;
+  }
+  
+  .logo {
+    font-size: 0.85rem;
+  }
+  
+  .logo-icon {
+    font-size: 1.1rem;
+  }
+  
+  .search-input {
+    padding: 0.25rem 0.5rem 0.25rem 1.75rem;
+    font-size: 0.7rem;
+    border-radius: 15px;
+  }
+  
+  .search-icon {
+    left: 6px;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .header {
+    padding: 0.25rem 0.375rem;
+  }
+  
+  .header-inner {
+    gap: 0.125rem;
+  }
+  
+  .logo {
+    font-size: 0.75rem;
+  }
+  
+  .logo-icon {
+    font-size: 0.95rem;
+  }
+  
+  .search-input {
+    padding: 0.1875rem 0.375rem 0.1875rem 1.5rem;
+    font-size: 0.625rem;
+    border-radius: 12px;
+  }
+  
+  .search-icon {
+    left: 5px;
+    font-size: 0.7rem;
+  }
 }

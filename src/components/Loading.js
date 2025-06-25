@@ -1,10 +1,12 @@
-import React from "react";
+import React from 'react';
+import './Loading.css';
 
 export default function Loading() {
   return (
-    <div>
-      {/* TODO: Render spinner / loading indicator */}
-      Loading component
+    <div className="loading">
+      <div className="spinner"></div>
+      <p>Loading...</p>
     </div>
   );
 }
+
