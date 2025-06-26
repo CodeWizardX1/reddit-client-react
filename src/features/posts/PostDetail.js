@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import { fetchComments } from "../comments/commentSlice";
 import CommentList from "../comments/CommentList";
 import "./PostDetail.css";
