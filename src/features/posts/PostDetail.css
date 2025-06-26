@@ -62,6 +62,7 @@
     margin: 0.5rem auto;
     padding: 0.75rem;
     border-radius: 4px;
+    max-width: 390px;
   }
   
   .post-detail-title {
