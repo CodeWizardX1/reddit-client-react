@@ -15,6 +15,11 @@ export default function PostDetail() {
   );
 
   useEffect(() => {
+    // Scroll to top when component mounts
+    window.scrollTo(0, 0);
+  }, []);
+
+  useEffect(() => {
     if (post?.permalink) {
       dispatch(fetchComments(post.permalink));
     }
