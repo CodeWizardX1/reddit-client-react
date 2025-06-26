@@ -87,6 +87,7 @@
 
 @media (max-width: 320px) {
   .post-detail {
+    max-width: 300px;
     margin: 0.25rem auto;
     padding: 0.5rem;
   }
