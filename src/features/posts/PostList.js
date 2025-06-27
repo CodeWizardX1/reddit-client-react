@@ -25,7 +25,12 @@ export default function PostList() {
   }, [dispatch]);
 
   if (isLoading) return <Loading />;
-  if (error) return <Error message={error} />;
+  if (error) {
+    const errorMessage = error.toLowerCase().includes('failed to fetch') 
+      ? `${error}. Please try refreshing the page.`
+      : error;
+    return <Error message={errorMessage} />;
+  }
 
   return (
     <div className="post-list">
